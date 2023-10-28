@@ -3,7 +3,7 @@ import OpenAI from "openai"
 import { Suspense } from 'react'
 import Markdown from 'react-markdown'
 
-export const maxDuration = 5;
+export const maxDuration = 300;
 const INTRO = "You’re writing a book. It’s a period story about a time in Ben’s late 20s/early 30s. At the beginning he’s new to living alone in his first 1 bdrm apartment. He has a girlfriend and a dog named Bailey. Across the hall he here’s of neighbors roughly his age who host a party every few weeks. He wants to figure out some way to work himself into that entirely foreign friend group. By the end of the novel he’s living happily with his girlfriend and some of their best friends have come out of that once foreign friend group.\n\nWhat are the 12 chapters of the book?"
 const INITIAL_MESSAGES: OpenAI.Chat.Completions.ChatCompletionMessageParam[] = [
   {"role": "system", "content": "You are a helpful writing assistant that only produces content in markdown format."},
